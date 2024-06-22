@@ -12,7 +12,7 @@ export default function Login() {
     // 5. Replace the clientID variable below with your actual Client ID obtained from Spotify Developer Dashboard
 
     const clientID = '9407936e742142e6a20e4d272379e015';                                               // Spotify application client ID
-    const redirectURL = 'https://spotify-clone-523.netlify.app';                      // Redirect URL after authorization
+    const redirectURL = 'https://spotify-clone-523.netlify.app/';                      // Redirect URL after authorization
     const apiURL = 'https://accounts.spotify.com/authorize';           // Spotify authorization endpoint
 
     // List of permissions the application is requesting
