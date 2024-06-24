@@ -32,7 +32,7 @@ export default function Login() {
     ];
 
     // Redirect to Spotify's authorization page with necessary query parameters
-    window.location.href = `${apiURL}?client_id=${clientID}&redirect_uri=${redirectURL}&scope=${scope.join(
+    window.location.href = `${apiURL}?client_id=${clientID}&redirect_uri=https://spotify-clone-523.netlify.app/&scope=${scope.join(
       ' '
     )}&response_type=token&show_dialogue=true`;
   };
