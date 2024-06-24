@@ -11,8 +11,8 @@ export default function Login() {
     // 4. Set the Redirect URI to 'http://localhost:3000/' in your Spotify application settings
     // 5. Replace the clientID variable below with your actual Client ID obtained from Spotify Developer Dashboard
 
-    const clientID = '9407936e742142e6a20e4d272379e015';                                               // Spotify application client ID
-    const redirectURL = 'https://spotify-clone-523.netlify.app/';                      // Redirect URL after authorization
+    const clientID = 'd44c00dcad0b4719842e7d5c67dc66a2';                                               // Spotify application client ID
+    const redirectURL = 'https://spotify-clone-523.netlify.app';                      // Redirect URL after authorization
     const apiURL = 'https://accounts.spotify.com/authorize';           // Spotify authorization endpoint
 
     // List of permissions the application is requesting
@@ -32,7 +32,7 @@ export default function Login() {
     ];
 
     // Redirect to Spotify's authorization page with necessary query parameters
-    window.location.href = `${apiURL}?client_id=${clientID}&redirect_uri=https://spotify-clone-523.netlify.app/&scope=${scope.join(
+    window.location.href = `${apiURL}?client_id=${clientID}&redirect_uri=${redirectURL}&scope=${scope.join(
       ' '
     )}&response_type=token&show_dialogue=true`;
   };
